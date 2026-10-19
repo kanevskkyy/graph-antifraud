@@ -1,0 +1,5 @@
+,pr_auc,pr_auc,roc_auc,roc_auc,f1_illicit,f1_illicit,f1_macro,f1_macro,precision,precision,recall,recall
+,mean,std,mean,std,mean,std,mean,std,mean,std,mean,std
+model,,,,,,,,,,,,
+"all (165 features, with aggregates)",0.802,0.002,0.93,0.003,0.793,0.006,0.89,0.003,0.859,0.014,0.736,0.001
+"local (93 features, no graph)",0.783,0.001,0.917,0.003,0.743,0.004,0.863,0.002,0.765,0.007,0.721,0.001

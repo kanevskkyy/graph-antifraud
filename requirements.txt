@@ -1,0 +1,8 @@
+torch
+torch_geometric
+scikit-learn
+xgboost
+pandas
+numpy
+matplotlib
+mlflow

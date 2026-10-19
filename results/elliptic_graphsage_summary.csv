@@ -1,0 +1,4 @@
+,pr_auc,pr_auc,roc_auc,roc_auc,f1_illicit,f1_illicit,f1_macro,f1_macro,precision,precision,recall,recall
+,mean,std,mean,std,mean,std,mean,std,mean,std,mean,std
+model,,,,,,,,,,,,
+"GraphSAGE (2 layers, 188 epochs)",0.684,0.028,0.9,0.003,0.666,0.024,0.822,0.013,0.697,0.053,0.639,0.006

@@ -1,0 +1,7 @@
+relation,edges,mean_degree,isolated_%,P(fraud nbr | fraud node),P(fraud nbr | benign node),dataset
+net_rur,49315,2.1,48.1,0.909,0.002,YelpChi
+net_rtr,573616,25.0,1.1,0.176,0.141,YelpChi
+net_rsr,3402743,148.1,0.1,0.186,0.132,YelpChi
+net_upu,175608,29.4,14.4,0.177,0.124,Amazon
+net_usu,3566479,597.2,0.8,0.067,0.023,Amazon
+net_uvu,1036737,173.6,0.7,0.064,0.02,Amazon

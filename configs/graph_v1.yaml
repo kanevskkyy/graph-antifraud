@@ -1,0 +1,9 @@
+nodes: transactions
+direction: past_to_future          
+time_order: [TransactionDT, TransactionID]
+relations:
+  u3: {key: [card1, addr1, P_emaildomain], max_prev_neighbors: 50, window_days: 30}
+  u2: {key: [card1, addr1],                max_prev_neighbors: 50, window_days: 30}
+  c1: {key: [card1],                       max_prev_neighbors: 20, window_days: 30}
+edge_attr: [dt_seconds]            
+labels_in_message_passing: false

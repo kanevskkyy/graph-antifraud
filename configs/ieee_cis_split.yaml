@@ -1,0 +1,5 @@
+dataset: ieee-cis
+split_by: week            # week = (TransactionDT // 86400) // 7
+train_weeks: [0, 17]
+val_weeks: [18, 21]
+test_weeks: [22, 26]

@@ -1,0 +1,9 @@
+features: delayed_neighbor_labels
+relations:
+  c1: [card1]
+  u2: [card1, addr1]
+  u3: [card1, addr1, P_emaildomain]
+delays_days: [7, 14, 30]
+label_rule: "label of earlier transaction j is used for i only if t_j <= t_i - delay"
+history: unbounded     
+own_label_used: false

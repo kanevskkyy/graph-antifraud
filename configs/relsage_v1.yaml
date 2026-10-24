@@ -1,0 +1,9 @@
+model: RelSAGE2           # 2 шари, окремі ваги на відношення u3, u2, c1
+hidden: 128
+fanout: [10, 5]           # сусідів на відношення: крок 1, крок 2
+loss: weighted BCE        # pos_weight = частка чесних / фрод у train
+optimizer: Adam, lr 1e-3, weight_decay 1e-5
+early_stopping: val PR-AUC, patience 3, max 12 epochs
+inputs_A: tabular (quantile-normal, NaN -> 0, + share of NaN per group)
+inputs_B: A + delayed neighbor labels (delta 7): nk, fk, rate, has_known, nprior per relation
+graph: configs/graph_v1.yaml

@@ -1,0 +1,8 @@
+model: RelSAGE2E          # 2 шари, окремі ваги на відношення, ознаки ребра
+edge_features: [log1p(days_between), label_known, known_fraud, known_honest]
+label_rule: "label of neighbor j is known for i only if t_j <= t_i - 7 days (hop 2: relative to hop-1 node)"
+node_inputs: tabular only (no label aggregates on nodes)
+hidden: 128
+fanout: [10, 5]
+variants: [v2-time, v2]
+selection_rule: "proceed to 5 seeds only if seed-0 test PR-AUC >= 0.54"

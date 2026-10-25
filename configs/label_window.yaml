@@ -1,0 +1,5 @@
+selection: validation PR-AUC (XGBoost, 5 seeds); tie-break: shorter window if diff < noise
+val_pr_auc: {w30: 0.640, w90: 0.642, unbounded: 0.622}
+chosen_window_days: 30
+label_delay_days: 7
+node_label_features: [log1p(nk), log1p(fk), rate, has_known]   # per relation
